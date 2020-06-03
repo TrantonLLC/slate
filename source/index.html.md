@@ -5,7 +5,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - shell
 
 toc_footers:
-  - <a href='https://scoutapp-ai-staging.herokuapp.com/app/apps'>Scout Developer portal</a>
+  - <a href='https://scoutapp.ai/app/apps'>Scout Developer portal</a>
 
 includes:
   - oauth
@@ -22,7 +22,7 @@ search: true
 Welcome to the Scout API. The Scout API is organized around [REST](https://en.wikipedia.org/wiki/Representational_state_transfer), accepts
 JSON request bodies, and returns JSON encoded responses.
 
-The base URL is `https://scoutapp-ai-staging.herokuapp.com/api/v1`. Any endpoints described should be appended to the base URL described here.
+The base URL is `https://scoutapp.ai/api/v1`. Any endpoints described should be appended to the base URL described here.
 
 <br>
 <br>
@@ -48,7 +48,7 @@ curl "api_endpoint_here"
 > Make sure to replace `yoursecretkey` with your application's secret key.
 
 The Scout API uses application secret keys in request headers to authenticate requests. You can get your secret key from the
-[developer page](https://scoutapp-ai-staging.herokuapp.com/app/apps) inside Scout.
+[developer page](https://scoutapp.ai/app/apps) inside Scout.
 
 `x-api-key: yoursecretkey`
 

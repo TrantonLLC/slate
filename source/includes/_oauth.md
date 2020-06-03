@@ -7,7 +7,7 @@ To use OAuth, make sure you have your Client ID, Secret Key, and have set redire
 
 To start the OAuth flow, redirect your user to a URL in this format:
 
-`https://scoutapp-ai-staging.herokuapp.com/oauth/new?client_id={your client ID}&redirect_uri={your redirect uri}&scopes={comma,separated,scopes}`
+`https://scoutapp.ai/oauth/new?client_id={your client ID}&redirect_uri={your redirect uri}&scopes={comma,separated,scopes}`
 
 If you make this request with an invalid redirect URI that hasn't been saved in your app settings, or a scope that your application is not approved for,
 your will see an error message.
@@ -20,7 +20,7 @@ You will then exchange this code in the next request for an access token.
 
 ```shell
   curl --request POST \
-    --url https://scoutapp-ai-staging.herokuapp.com/api/v1/oauth/token \
+    --url https://scoutapp.ai/api/v1/oauth/token \
     --header 'content-type: application/json' \
     --header 'x-api-key: yoursecretkey' \
     --data '{
@@ -49,7 +49,7 @@ Exchange an OAuth code for an access token.
 
 ### HTTP Request
 
-`POST https://scoutapp-ai-staging.herokuapp.com/api/v1/oauth/token`
+`POST https://scoutapp.ai/api/v1/oauth/token`
 
 ### Body Parameters
 
@@ -63,7 +63,7 @@ redirect_uri | The `redirect_uri` url parameter taht was used to begin the OAuth
 
 ```shell
 curl --request GET \
-  --url 'https://scoutapp-ai-staging.herokuapp.com/api/v1/oauth/info?access_token=c9e035bef74b804483b7e306' \
+  --url 'https://scoutapp.ai/api/v1/oauth/info?access_token=c9e035bef74b804483b7e306' \
   --header 'x-api-key: yoursecretkey'
 ```
 
@@ -84,7 +84,7 @@ that if they remove access from their account, you reflect that accurately.
 
 ### HTTP Request
 
-`GET https://scoutapp-ai-staging.herokuapp.com/api/v1/oauth/info`
+`GET https://scoutapp.ai/api/v1/oauth/info`
 
 ### Query Parameters
 

@@ -10,7 +10,6 @@ The `username` scope is optional, but encouraged so you can display their Scout 
 
 ## Post a checkout
 
-
 ```shell
 curl --request POST \
   --url https://ingest.scoutapp.ai/ingest \
@@ -29,6 +28,7 @@ curl --request POST \
   "color": "University Blue",
   "store": "Kith",
   "user_id": 1,
+  "access_token": "c9e035bef74b804483b7e306 ",
   "checkout_time": 1591086812
 }'
 ```
@@ -42,6 +42,8 @@ curl --request POST \
 ```
 
 Posting a checkout should be done alongside sending any other requests you do on a successful checkout (Discord webhook, analytics webhook, etc.).
+**PLEASE ONLY POST CHECKOUTS FROM YOUR SERVER, NOT FROM CLIENTS**
+
 
 ### HTTP Request
 
@@ -63,5 +65,6 @@ brand | The purchased item's brand `optional`
 color | The purchased item's color `optional`
 store | The store that the item was purchased at `optional`
 user_id | The Scout user's ID that checked out
+access_token | The Scout user's access token
 checkout_time | An epoch timestamp in **seconds** of the checkout 
 
