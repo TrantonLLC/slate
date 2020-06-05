@@ -12,7 +12,7 @@ The `username` scope is optional, but encouraged so you can display their Scout 
 
 ```shell
 curl --request POST \
-  --url https://ingest.scoutapp.ai/ingest \
+  --url https://ingest.scoutapp.ai/checkout \
   --header 'content-type: application/json' \
   --header 'x-api-key: yoursecretkey' \
   --data '{
@@ -47,7 +47,7 @@ Posting a checkout should be done alongside sending any other requests you do on
 
 ### HTTP Request
 
-`POST https://ingest.scoutapp.ai/ingest`
+`POST https://ingest.scoutapp.ai/checkout`
 
 ### Body Parameters
 

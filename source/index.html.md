@@ -10,6 +10,7 @@ toc_footers:
 includes:
   - oauth
   - checkouts
+  - key_resetting
   - errors
   - brand
  
